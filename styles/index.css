@@ -1,9 +1,13 @@
-/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+.mobile-menu-icon {
+    display: none;
+}
+
 @media screen and (max-width: 1440px) {
     body {
         min-height: 100vh;
@@ -18,9 +22,8 @@
         width: 100%;
     }
 }
-/* -------- Header Section --------- */
 
-.header-container {
+.navbar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,26 +41,149 @@
     transform: scale(1.2);
 }
 
-.header-container__navbar ul {
+.header-container-navbar ul {
     list-style: none;
     display: flex;
     gap: 2em;
 }
 
-.header-container__navbar a {
+.header-container-navbar a {
     position: relative;
     font-family: "Source Sans 3", sans-serif;
     font-size: 16px;
     letter-spacing: -0.35px;
-    text-decoration: none; 
+    text-decoration: none;
     color: black;
     opacity: 80%;
 }
 
-.header-container__navbar a:hover,
-.header-container__navbar a:focus-visible {
-    color: #4071aa
+.header-container-navbar a:hover,
+.header-container-navbar a:focus-visible {
+    color: #4071aa;
 }
 
-/* -------- Patagonia Section --------- */
+.patagonia-section {
+    width: 50%;
+}
 
+.patagonia-container {
+    width: 100%;
+}
+
+.patagonia-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 90px;
+    line-height: 102px;
+    letter-spacing: -2px;
+}
+
+.patagonia-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 400;
+    opacity: 80%;
+}
+
+.patagonia-img-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+/* ---------------- Tablet Section ---------------- */
+@media screen and (max-width: 1170px) {
+    .navbar-header {
+        background-size: 10% 10%;
+        background-image:
+            linear-gradient(to right, #5c7cfa2d 1px, transparent 2px),
+            linear-gradient(to bottom, #5c7cfa29 1px, transparent 2px);
+    }
+
+    body {
+        max-height: 100vh;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .patagonia-section {
+        width: 100%;
+    }
+
+    .patagonia-container {
+        justify-items: center;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .patagonia-header {
+        margin-bottom: 0.5em;
+    }
+
+    .patagonia-text {
+        margin-top: 0;
+        max-width: 55%;
+        text-align: center;
+    }
+
+    .patagonia-img-section {
+        max-width: 100%;
+        margin-top: 5em;
+        align-self: center;
+    }
+
+    .patagonia-img-section-image {
+        position: relative;
+        z-index: -1;
+    }
+}
+
+/* ---------------- Mobile Section ---------------- */
+@media screen and (max-width: 700px) {
+    .header-container-navbar ul {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        width: 24px;
+        height: auto;
+        cursor: pointer;
+    }
+
+    .patagonia-header {
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -1px;
+        text-align: center;
+    }
+
+    .patagonia-text {
+        font-size: 16px;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .patagonia-img-section {
+        margin-top: 2em;
+    }
+
+    .patagonia-section {
+        width: 100%;
+        padding: 0 1em;
+    }
+}

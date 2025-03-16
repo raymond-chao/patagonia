@@ -5,29 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/index.css">
     <title>Patagonia</title>
 </head>
-<body class="body__header">
-    <header class="header">
-        <div class="header-container">
-            <a href="index.html"><img class="logo" src="img/logo.png" alt="Head logo"></a>
-            <nav class="header-container__navbar">
-                <ul>
-                    <li><a href="#works">Works</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
+<body>
+    <header class="navbar-header">
+        <div class="navbar-container">
+            <a href="index.html" class="logo-link">
+                <img class="logo" src="img/logo.png" alt="Head Logo">
+            </a>
+            <nav class="header-container-navbar" aria-label="Navbar">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#works" class="nav-link">Works</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
+                <img class="mobile-menu-icon" src="img/dots.png" alt="Three dots">
             </nav>
         </div>
     </header>
+
     <main>
         <section class="patagonia-section">
             <div class="patagonia-container">
                 <h1 class="patagonia-header">Patagonia</h1>
-                <p class="patagonia-text">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcor.</p>
+                <p class="patagonia-text">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec.</p>
+                <p class="patagonia-text">Donec viverra eleifend lacus, vitae ullamcor.</p>
             </div>
         </section>
     </main>
@@ -35,6 +40,6 @@
         <div class="patagonia-img-section-container">
             <img class="patagonia-img-section-image" src="img/horses.jpg" alt="Running horses">
         </div>
-    </section>    
+    </section>
 </body>
 </html>
