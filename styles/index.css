@@ -1,0 +1,63 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 1440px) {
+    body {
+        min-height: 100vh;
+        max-width: 1440px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+/* -------- Header Section --------- */
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    margin-left: 10%;
+    margin-right: 11%;
+}
+
+.logo {
+    max-height: 2em;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+}
+
+.header-container__navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+}
+
+.header-container__navbar a {
+    position: relative;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 16px;
+    letter-spacing: -0.35px;
+    text-decoration: none; 
+    color: black;
+    opacity: 80%;
+}
+
+.header-container__navbar a:hover,
+.header-container__navbar a:focus-visible {
+    color: #4071aa
+}
+
+/* -------- Patagonia Section --------- */
+
