@@ -106,8 +106,15 @@
             linear-gradient(to bottom, #5c7cfa29 1px, transparent 2px);
     }
 
+    .header-container-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
     body {
         max-height: 100vh;
+        max-width: 617px;
+        width: 100%;
     }
 
     main {
@@ -156,6 +163,11 @@
 @media screen and (max-width: 700px) {
     .header-container-navbar ul {
         display: none;
+    }
+    body {
+        max-height: 100vh;
+        max-width: 256px;
+        width: 100%;
     }
 
     .mobile-menu-icon {
